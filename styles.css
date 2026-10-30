@@ -30,6 +30,14 @@ body {
     flex-direction: column;
 }
 
+.front, .back, .left, .right, .top, .bottom {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
 .front  { transform: translateZ(100px); }
 .back   { transform: rotateY(180deg) translateZ(100px); }
 .left   { transform: rotateY(-90deg) translateZ(100px); }
@@ -38,7 +46,7 @@ body {
 .bottom { transform: rotateX(-90deg) translateZ(100px); }
 
 .line-1, .line-2, .line-3 {
-    flex: 1;
+    height: 33.33%;
     border: 1px solid black;
     box-sizing: border-box;
 }
